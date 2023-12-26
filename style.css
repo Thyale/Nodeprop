@@ -1,0 +1,310 @@
+@media all {   /*Mobile frist and tablets*/
+  /*gerais*/
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  ::-webkit-scrollbar{
+    width: 0;height: 0;
+  }
+
+  html{
+    height: 100vh;
+    width: 100vw;
+  }
+
+  body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  /*header*/
+
+  header{
+    display: flex;
+    flex-direction: column;
+  }
+
+  header .parte1{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+  }
+
+  .material-symbols-outlined{
+    color: white;
+    background-image: linear-gradient(to left, red, orange);
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .material-symbols-outlined:hover{
+    color:rgb(0, 0, 0);
+  }
+
+  .logomobile{
+    width: 20vw;
+    max-width: 100px;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .lista{
+    display: none;
+    background-color: black;
+  }
+
+  .lista a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .lista a:hover{
+    border: 1px solid orange;
+    border-radius: 20px;
+    color:orange;
+  }
+
+
+  /*main*/
+
+  /*primeira parte*/
+
+  .inovar{
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .texto{
+    color: white;
+    text-align: center;
+    margin: 10px 20px;
+  }
+
+  .caixas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .caixas button{
+    background-color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    width: 30vw;
+    max-width: 200px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+  }
+
+   .caixas button:hover{
+    background-image: linear-gradient(to left, red, orange);
+    border: 2px solid rgb(224, 100, 50);
+   }
+
+  .caixas a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .caixas a:hover{
+    color: white;
+  }
+
+  /*segunda parte*/
+
+  .imagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .imagens div{
+    width: 80%;
+    height: 450px;
+    max-width: 400px;
+    background-color: rgb(241, 241, 234);
+    border-radius: 10px;
+    text-align: left;
+    padding: 20px;
+    margin: 10px 0px;
+  }
+
+  .imagens div h1{
+    margin: 10px 0px;
+  }
+
+  .imagens div p{
+    margin: 10px 0px;
+    color: gray;
+  }
+
+  .imagens img{
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /*Inscreva-se*/
+
+  .inscrever{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+  }
+
+  .texto2{
+    margin-bottom: 20px;
+  }
+
+  .inscrever input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+
+  #email{
+    width: 50%;
+    max-width: 300px;
+    background-color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+
+
+  /*footer*/
+
+  footer{
+    background-image: linear-gradient(to left, red, orange);
+    text-align: center;
+    padding: 30px;
+    color: black;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: rgb(83, 83, 83);
+  }
+
+  footer a:hover{
+    color: red;
+  }
+
+}
+
+@media (min-width:992px){  /*Laptops e dispositivos maiores*/
+
+  /*header*/
+
+  header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px;
+  }
+
+  .logomobile{
+    display: none;
+  }
+
+  .logo{
+    display: block;
+    width: 20vw;
+    max-width: 400px;
+  }
+
+  #span{
+    display: none;
+  }
+
+  .lista{
+    display: block;
+    background-color: white;
+  }
+
+  .lista ul{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: space-around;
+    padding: 10px;
+    list-style: none;
+  }
+
+  .lista a{
+    color: grey;
+  }
+
+  /*main*/
+
+  /*primeira parte*/
+
+  .inovar{
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+  }
+
+  .texto{
+    color: white;
+    text-align: center;
+    margin: 0;
+  }
+
+  .texto h1{
+    margin-bottom: 10px;
+    font-size: 50px;
+  }
+  .texto p{
+    font-size: 20px;
+  }
+
+  .caixas{
+    gap: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .caixas button{
+    font-size: 20px;
+    width: 30vw;
+    max-width: 400px;
+    padding: 20px;
+  }
+
+  /*segunda parte*/
+
+  .imagens{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0px;
+  }
+
+}
+
